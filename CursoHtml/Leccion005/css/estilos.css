@@ -1,0 +1,33 @@
+h1{
+    color: #560bad;
+}
+
+/*link sin click*/
+a:link, a:visited{
+    background-color:#b5179e ;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*inline block para que cada 
+    link tenga su espacion y no se encimen*/
+}
+
+a:hover, a:active{
+    background-color: #f72585;
+
+}
+/*links visitados
+a:visited{
+    color: #219ebc;
+    text-decoration: none;
+}
+a:hover{
+    color: #8ecae6;
+    text-decoration: underline;
+}
+a:active{
+    color: #023047;
+    text-decoration: underline;
+}*/

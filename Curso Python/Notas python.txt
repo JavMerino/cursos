@@ -1,0 +1,13 @@
+*Para ejecutar desde consola ubicarnos dentro de la carpeta y antes del nombre del archivo .py colocar 'Python'.
+ Variables en python mirarlas como etiquetas. 
+
+Las constates por convencion en python son variables escritas en mayuscula eso hace saber que es una constante.
+
+palabras reservadas : https://www.programiz.com/python-programming/keyword-list
+
+*** comentarios simples con: # 
+*** comentarios con saltos o varias lineas es con 3 comillas dobles en apertura y cierres. 
+
+Tipos de datos: 
+
+String dfdffllñññññ ::;;256666666767ñllllllñ...:::,;;''<>Mmm;:|\}]{[222@@@"":"

@@ -1,0 +1,44 @@
+lista = ['String', 10, 15.6, True ]  #list()
+
+#considerar solo crear listas que almacenen un solo tipo de valor 
+
+lista_cursos = ['Calculo', 'Programacion', 'Fisica', 'Analsis', 'Sistemas']
+
+primer_curso = lista_cursos[0]
+print(primer_curso)  #Calculo
+
+lista_cursos[1] = 'Estructura de Datos'
+
+sub_lista = lista_cursos[0:3]
+print(sub_lista) 
+
+#Añadir elementos append
+
+lista_cursos.append('Operativos')
+
+print(lista_cursos)
+print(len(lista_cursos))
+
+#Añadir elementos en una poscion determinada insert(posicion,<Elemento>)
+
+lista_cursos.insert(0,'Multimedia')
+
+
+#añadir una lista a otra lista extend(<Lista1>)
+
+lista_lenguajes = ['c++', 'Dart', 'Java']
+
+lista_cursos.extend(lista_lenguajes)
+print(lista_cursos)
+#Eliminar un elemento de una lista del <Lista[posicion]> or lista.remove(<Elemento>)
+
+del lista_cursos[0]
+print(lista_cursos)
+
+lista_lenguajes.remove('Dart')
+print(lista_lenguajes)
+
+#para eliminar todos los elementos de una lista .clear()
+
+lista_lenguajes.clear()
+print(lista_lenguajes)
