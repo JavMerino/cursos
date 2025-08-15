@@ -7,8 +7,11 @@
     <link href="css/estilos.css" rel="stylesheet" />
 </head>
 <body>
+    <p>Titulo para tabla caption, 2 columas colspan 2 filas rowspan</p>
     <table >
+        <caption>Listado de alumnos</caption>
         <tr>
+            <!--<th colspan="2">Nombre</th>-->
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Email</th>
@@ -16,12 +19,26 @@
         <tr>
             <td>Juan</td>
             <td>Perez</td>
+            <!--<td rowspan="2">jperez@mail.com</td>-->
             <td>jperez@mail.com</td>
         </tr>
         <tr>
             <td>Carlos</td>
             <td>Merino</td>
             <td>cmerino@mail.com</td>
+            <!--<td>cmerino@mail.com</td>-->
+        </tr>
+        <tr>
+            <td>Victor</td>
+            <td>Tume</td>
+            <!--<td rowspan="2">jperez@mail.com</td>-->
+            <td>vtume@mail.com</td>
+        </tr>
+        <tr>
+            <td>kevin</td>
+            <td>nima</td>
+            <td>knima@mail.com</td>
+            <!--<td>cmerino@mail.com</td>-->
         </tr>
     </table>
 </body>

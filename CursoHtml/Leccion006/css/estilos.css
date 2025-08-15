@@ -1,3 +1,6 @@
+table{
+    width: 100%;
+}
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -12,3 +15,16 @@ td{
 th{
     text-align: center;
 }*/
+
+caption{
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+th{
+    color: #f1faee;
+    background-color: #1d3557;
+}
+tr:nth-child(eve)

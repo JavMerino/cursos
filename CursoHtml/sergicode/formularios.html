@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <div>
+    <h1>Formularios</h1>
+    <hr>
+    
+    <form action="envio.php" method="POST">
+        <input type="user" id="prueba" name="prueba" value="Javirukode" readonly>
+        <br>
+        <label for="email"> Email</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Escribe tu Usuario" maxlength="10" minlength="4" required> <!-- value = aparece el campo lleno --> 
+        <br>
+        <label for="password"> Contraseña: </label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu Contraseña" required>
+        <br>
+        <input type="checkbox" id="condiciones" name="condiciones" required> ¿Aceptas termino y condiciones? 
+        <br>
+        <input type="radio"  name="lenguajes" value="HTML" required> HTML
+        <input type="radio"  name="lenguajes" value="CSS" required> CSS
+        <input type="radio"  name="lenguajes" value="JavaScript" required> JavaScript
+        <br> 
+        <label for="experiencia">Años programando: </label>
+        <input type="number" id="experiencia" name="experiencia" placeholder="Años de experiencia" max="3" min="0" required>
+        <br>
+        <label for="archivo">Add cv: </label>
+        <input type="file" id="archivo" name="archivo" value="file" multiple required>
+        <br>
+        <label for="comentario">Escribe sugerencias</label>
+        <textarea name="comentario" id="comentario" placeholder="Escribe un comentario" rows="10" cols="50" required></textarea>
+        <br>
+        <label for="fecha">Fecha: </label>
+        <input type="date" name="fecha" id="fecha" max="2025-08-14" required>
+        <br>
+        <label for="pais">Selecciona pais de origen</label>
+        <select name="pais" id="pais" required>
+            <optgroup label="America">
+                <option value="Peru"selected>Peru</option>
+                <option value="Colombia" >Colombia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Argentina">Argentina</option>
+            </optgroup>
+            <optgroup label="Europa"> 
+                <option value="España">España</option>
+                <option value="Croacia">Croacia</option>
+                <option value="Portugal">Portugal</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <input type="button" onclick="alert('Hola, ¿cómo estás?')" value="Saludando"> Button
+        <br>
+        <br>
+        <input type="submit" value="Enviar Datos Formulario"> Submit
+        <br>
+        <br>
+        <input type="reset" value="Resetear Form"> Reset
+    </form>
+    </div>
+    
+</body>
+</html>

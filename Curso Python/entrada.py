@@ -1,14 +1,42 @@
-nombre_completo = input('Ingresa tu nombre completo: ')
-  #Tipo de
+import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')  # Forzar uso de backend con ventana gráfica
+import matplotlib.pyplot as plt
+# Metodo de Euler
+def euler (f, x0, y0, x1, n):
+    h=(x1-x0)/n #tamaño de paso 
+    xi=np. zeros (n+1) #vector de x variable independiente
+    yi=np. zeros (n+1) #vector de y variable independiente
+    xi[0]=x0 #tiempo inicial
+    yi[0]=y0 #concentracion inicial 
 
-edad = input('Ingresa tu edad: ')
+    for i in range(n):
+        yi[i+1]=yi[i]+h*f(xi[i],yi[i])
+        xi[i+1]=xi[i]+h
+    return xi, yi #Vector de valores calculados
 
-edad = int(edad) 
+def f(x,y):
+    return -5*y
 
-altura= input('Ingresa tu altura: ')
-altura= float(altura)
+def main():
+    x0 =0 #valor inicial de tiempo
+    y0 =2.5 #valor inicial de la concentracion
+    x1 =0.6 #valor final del tiempo
+    n =100 #numero de pasos
+    #llamada a la funcion euler
+    x, y=euler(f,x0,y0,x1,n)
+    print ('x= ',x)
+    print('y=',y)
 
-autorizacion = input('¿Autorizas el programa? (si/no)')
-autorizacion = autorizacion == 'si'
-
-print(autorizacion)
+    # Grafica
+    fig=plt.figure ()
+    plt.plot (x,y, '.--',label= 'Euler')
+    #plt.plot(np.linspace (x0, x1, 50)
+    plt.grid ()
+    plt.legend ()
+    plt.title ('Metodo de Euler con '+str (n)+'pasos')
+    plt.xlabel ('tiempo')
+    plt.ylabel ('concentracion')
+    plt.show ()
+    #fig.savefig (" edo_euler5" . pdf ", bbox_in)
+if __name__ == "__main__": main()
